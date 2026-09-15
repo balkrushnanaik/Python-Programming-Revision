@@ -9,9 +9,16 @@
 #    Output: `My name is Rahul. I am 21 years old and I live in Pune.`
 name = input("Enter your name")
 age = input("Enter your age")
+city = input("Enter your city")
+
+print(f"My name is {name}. I am {age} years old and I live in {city}.")
 # 2. **Add Two Numbers**
 #    Take two integers as input and print their sum.
-#
+num1 = int(input("Enter first number"))
+num2 = int(input("Enter second number"))
+
+sum = num1 + num2
+print(f"Sum of {num1} and {num2} is {sum}")
 # 3. **Basic Calculator**
 #    Take two numbers and print their:
 #
@@ -19,7 +26,14 @@ age = input("Enter your age")
 #    * Subtraction
 #    * Multiplication
 #    * Division
-#
+n1 = int(input("Enter first number: "))
+n2 = int(input("Enter second number: "))
+
+addition = n1 + n2
+print(addition)
+
+subtraction = n1 - n2
+print(subtraction)
 # 4. **Square of a Number**
 #    Take a number as input and print its square.
 #
