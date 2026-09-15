@@ -36,10 +36,12 @@ subtraction = n1 - n2
 print(subtraction)
 # 4. **Square of a Number**
 #    Take a number as input and print its square.
-#
+number1 = int(input("Enter any number: "))
+print(f"Square is : {number1 * number1}")
 # 5. **Cube of a Number**
 #    Take a number as input and print its cube.
-#
+number1 = int(input("Enter any number: "))
+print(f"Square is : {number1 ** 3}")
 # 6. **Greeting Program**
 #    Take the user's name as input and print:
 #    `Hello, <name>! Welcome to Python.`
