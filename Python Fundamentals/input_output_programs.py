@@ -45,7 +45,8 @@ print(f"Square is : {number1 ** 3}")
 # 6. **Greeting Program**
 #    Take the user's name as input and print:
 #    `Hello, <name>! Welcome to Python.`
-
+name = input("Enter your name")
+print(f"Hello, {name}! Welcome to Python.")
 # 7. **Age Next Year**
 #    Take the user's current age and print their age next year.
 
