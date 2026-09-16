@@ -49,7 +49,10 @@ name = input("Enter your name")
 print(f"Hello, {name}! Welcome to Python.")
 # 7. **Age Next Year**
 #    Take the user's current age and print their age next year.
+age = int(input("Enter your age"))
 
+next_year_age = age + 1
+print(f"Next Year age: {next_year_age}")
 # 8. **Full Name**
 #    Take first name and last name separately and print the full name.
 
