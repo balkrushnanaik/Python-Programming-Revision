@@ -136,7 +136,10 @@ print(f"Percentage: {percentage}%")
 # 18. **Bill Calculator**
 #     Take the price and quantity of a product and calculate the total bill.
 #
-# ---
+price = float(input("Enter price of product: "))
+quantity = int(input("Enter quantity of product: "))
+total_bill = price * quantity
+print(f"Total bill for {quantity} products at {price} each is: {total_bill}")
 #
 # ## 🟠 Level 3 — Multiple Inputs
 #
