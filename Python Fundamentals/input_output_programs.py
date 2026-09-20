@@ -89,17 +89,29 @@ fahrenheit = (celsius * 9/5) + 32
 print(f"Temperature in Fahrenheit is: {fahrenheit}")
 # 13. **Minutes to Seconds**
 #     Take minutes as input and convert them into seconds.
-#
+minutes = int(input("Enter minutes: "))
+seconds = minutes * 60  
+print(f"{minutes} minutes is equal to {seconds} seconds.")
 # 14. **Hours to Minutes**
 #     Take hours as input and convert them into minutes.
-#
+hours = int(input("Enter hours: "))
+minutes = hours * 60
+print(f"{hours} hours is equal to {minutes} minutes.")
+
+minutes = int(input("Enter minutes: "))
+hours = minutes / 60
+print(f"{minutes} minutes is equal to {hours} hours.")
 # 15. **Simple Interest**
 #     Take:
 #
 #     * Principal
 #     * Rate
 #     * Time
-#
+p = float(input("Enter principal amount: "))
+r = float(input("Enter rate of interest: "))
+t = float(input("Enter time in years: "))
+si = (p * r * t) / 100
+print(f"Simple Interest is: {si}")
 #     Calculate simple interest.
 #     Formula: `SI = (P × R × T) / 100`
 #
