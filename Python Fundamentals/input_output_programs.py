@@ -107,23 +107,32 @@ print(f"{minutes} minutes is equal to {hours} hours.")
 #     * Principal
 #     * Rate
 #     * Time
+#     Calculate simple interest.
+#     Formula: `SI = (P × R × T) / 100`
 p = float(input("Enter principal amount: "))
 r = float(input("Enter rate of interest: "))
 t = float(input("Enter time in years: "))
 si = (p * r * t) / 100
 print(f"Simple Interest is: {si}")
-#     Calculate simple interest.
-#     Formula: `SI = (P × R × T) / 100`
-#
 # 16. **Average of Three Numbers**
 #     Take three numbers and print their average.
-#
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))    
+num3 = float(input("Enter third number: "))
+average = (num1 + num2 + num3) / 3
+print(f"Average of {num1}, {num2}, and {num3} is: {average}")
 # 17. **Total and Percentage**
 #     Take marks of 5 subjects and calculate:
 #
 #     * Total marks
 #     * Percentage
-#
+maths = float(input("Enter marks in Maths: "))
+science = float(input("Enter marks in Science: "))
+english = float(input("Enter marks in English: "))
+total_marks = maths + science + english 
+percentage = (total_marks / 300) * 100
+print(f"Total Marks: {total_marks}")
+print(f"Percentage: {percentage}%")
 # 18. **Bill Calculator**
 #     Take the price and quantity of a product and calculate the total bill.
 #
