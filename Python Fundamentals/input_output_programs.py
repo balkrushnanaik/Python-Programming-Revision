@@ -70,16 +70,23 @@ area = l * b
 print(f"Area of rectangle is: {area}")
 # 10. **Perimeter of Rectangle**
 #     Take length and breadth and calculate the perimeter.
-
+l = int(input("Enter length of rectangle: "))
+b = int(input("Enter breadth of rectangle: "))
+perimeter = 2 * (l + b)
+print(f"Perimeter of rectangle is: {perimeter}")
 # 11. **Area of Circle**
 #     Take radius as input and calculate the area of a circle.
 #     Use `π = 3.14`.
-#
+r = float(input("Enter radius of circle: "))
+area = 3.14 * r * r
+print(f"Area of circle is: {area}")
 # 12. **Temperature Conversion**
 #     Take temperature in Celsius and convert it to Fahrenheit.
 #     Formula:
 #     `F = (C × 9/5) + 32`
-#
+celsius = float(input("Enter temperature in Celsius: "))
+fahrenheit = (celsius * 9/5) + 32   
+print(f"Temperature in Fahrenheit is: {fahrenheit}")
 # 13. **Minutes to Seconds**
 #     Take minutes as input and convert them into seconds.
 #
