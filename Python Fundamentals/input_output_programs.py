@@ -64,10 +64,13 @@ print(full_name)
 #
 # 9. **Area of Rectangle**
 #    Take length and breadth as input and calculate the area.
-#
+l = int(input("Enter length of rectangle: "))
+b = int(input("Enter breadth of rectangle: "))
+area = l * b
+print(f"Area of rectangle is: {area}")
 # 10. **Perimeter of Rectangle**
 #     Take length and breadth and calculate the perimeter.
-#
+
 # 11. **Area of Circle**
 #     Take radius as input and calculate the area of a circle.
 #     Use `π = 3.14`.
