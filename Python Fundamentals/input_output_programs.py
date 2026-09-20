@@ -150,12 +150,19 @@ print(f"Total bill for {quantity} products at {price} each is: {total_bill}")
 #     * Roll number
 #     * Age
 #     * Marks
-#
 #     Display all details neatly.
-#
+name, roll_number, age, marks = input("Enter name, roll number, age, and marks separated by commas: ").split(',')
+print(f"Name: {name}")
+print(f"Roll Number: {roll_number}")    
+print(f"Age: {age}")
+print(f"Marks: {marks}")
 # 20. **Employee Salary**
 #     Take basic salary, HRA, and bonus as input. Calculate the total salary.
-#
+basic_salary = float(input("Enter basic salary: "))
+hra = float(input("Enter HRA: "))   
+bonus = float(input("Enter bonus: "))
+total_salary = basic_salary + hra + bonus
+print(f"Total Salary is: {total_salary}")
 # 21. **Shopping Bill**
 #     Take the prices of 3 products and calculate:
 #
