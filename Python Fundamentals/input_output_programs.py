@@ -185,7 +185,10 @@ print(f"Distance traveled is: {distance} km")
 # 23. **BMI Calculator**
 #     Take weight in kg and height in meters. Calculate BMI.
 #     Formula: `BMI = weight / height²`
-#
+weight = float(input("Enter weight in kg: "))
+height = float(input("Enter height in meters: "))
+bmi = weight / (height ** 2)
+print(f"Your BMI is: {bmi}")    
 # 24. **Swap Two Numbers**
 #     Take two numbers as input and swap their values.
 #
