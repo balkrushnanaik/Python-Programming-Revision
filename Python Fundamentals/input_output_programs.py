@@ -168,7 +168,13 @@ print(f"Total Salary is: {total_salary}")
 #
 #     * Total amount
 #     * Average price
-#
+prod1 = float(input("Enter price of product 1: "))
+prod2 = float(input("Enter price of product 2: "))
+prod3 = float(input("Enter price of product 3: "))
+total_amount = prod1 + prod2 + prod3
+average_price = total_amount / 3
+print(f"Total Amount: {total_amount}")
+print(f"Average Price: {average_price}")
 # 22. **Travel Distance**
 #     Take speed and time as input and calculate distance.
 #     Formula: `Distance = Speed × Time`
