@@ -203,7 +203,12 @@ print(f"after swapping: a = {a}, b = {b}")
 #     * Hours
 #     * Minutes
 #     * Seconds
-#
+n = int(input("Enter time in seconds: "))
+hours = n // 3600       
+minutes = (n % 3600) // 60
+seconds = n % 60
+print(f"{n} seconds is equal to {hours} hours, {minutes} minutes, and {seconds} seconds.")
+
 # ---
 #
 # ## 🔴 Level 4 — Challenge Problems
