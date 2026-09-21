@@ -178,7 +178,10 @@ print(f"Average Price: {average_price}")
 # 22. **Travel Distance**
 #     Take speed and time as input and calculate distance.
 #     Formula: `Distance = Speed × Time`
-#
+speed = float(input("Enter speed in km/h: "))
+time = float(input("Enter time in hours: "))
+distance = speed * time
+print(f"Distance traveled is: {distance} km")
 # 23. **BMI Calculator**
 #     Take weight in kg and height in meters. Calculate BMI.
 #     Formula: `BMI = weight / height²`
