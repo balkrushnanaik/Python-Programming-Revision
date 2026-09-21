@@ -215,7 +215,13 @@ print(f"{n} seconds is equal to {hours} hours, {minutes} minutes, and {seconds} 
 #
 # 26. **Restaurant Bill**
 #     Take the prices of 3 dishes, calculate the subtotal, add 5% GST, and display the final bill.
-#
+dish1 = float(input("Enter price of dish 1: "))
+dish2 = float(input("Enter price of dish 2: "))
+dish3 = float(input("Enter price of dish 3: "))
+subtotal = dish1 + dish2 + dish3
+gst = subtotal * 0.05
+final_bill = subtotal + gst
+print(f"Subtotal: {subtotal}")
 # 27. **Salary Calculation**
 #     Take basic salary as input. Calculate:
 #
