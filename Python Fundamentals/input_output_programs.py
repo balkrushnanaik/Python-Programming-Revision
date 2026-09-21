@@ -191,7 +191,12 @@ bmi = weight / (height ** 2)
 print(f"Your BMI is: {bmi}")    
 # 24. **Swap Two Numbers**
 #     Take two numbers as input and swap their values.
-#
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+print(f"before swapping: a = {a}, b = {b}")
+a, b = b, a
+print(f"after swapping: a = {a}, b = {b}")
 # 25. **Time Conversion**
 #     Take a number of seconds and convert it into:
 #
