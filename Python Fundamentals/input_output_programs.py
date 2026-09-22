@@ -292,31 +292,3 @@ amount_per_person = total_amount / num_people
 print(f"Each person should pay: {amount_per_person}")   
 # ---
 #
-# ### 🎯 Recommended revision order
-#
-# Don't solve all 30 randomly. For a **Python basics revision**, I'd suggest:
-#
-# **First:** 1 → 8
-# **Then:** 9 → 18
-# **Then:** 19 → 25
-# **Finally:** 26 → 30
-#
-# Try solving them **without looking at solutions**. The main concepts you should practice here are:
-#
-# ```python
-# input()
-# print()
-# int()
-# float()
-# str()
-# ```
-#
-# and **type conversion**, especially:
-#
-# ```python
-# age = int(input("Enter your age: "))
-# price = float(input("Enter price: "))
-# name = input("Enter your name: ")
-# ```
-#
-# If you want, I can also give you **20 Input/Output problems in an interview/practical-exam style, without solutions**, so you can solve them yourself.
