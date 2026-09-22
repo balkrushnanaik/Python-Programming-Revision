@@ -271,7 +271,10 @@ print(f"Percentage: {percentage}%")
 print("Thank you for using the Marks Report Generator!")
 # 29. **Currency Conversion**
 #     Take an amount in Indian Rupees and convert it into another currency using a conversion rate provided by the user.
-#
+amount_in_inr = float(input("Enter amount in INR: "))
+conversion_rate = float(input("Enter conversion rate (1 INR to target currency): "))
+amount_in_target_currency = amount_in_inr * conversion_rate
+print(f"{amount_in_inr} INR is equal to {amount_in_target_currency} in the target currency.")
 # 30. **Bill Splitter**
 #     Take:
 #
