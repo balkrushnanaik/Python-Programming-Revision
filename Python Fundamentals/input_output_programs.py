@@ -283,7 +283,13 @@ print(f"{amount_in_inr} INR is equal to {amount_in_target_currency} in the targe
 #     * Tip percentage
 #
 #     Calculate how much each person should pay.
-#
+total_bill = float(input("Enter total restaurant bill: "))
+num_people = int(input("Enter number of people: "))
+tip_percentage = float(input("Enter tip percentage: "))
+tip_amount = total_bill * (tip_percentage / 100)
+total_amount = total_bill + tip_amount
+amount_per_person = total_amount / num_people   
+print(f"Each person should pay: {amount_per_person}")   
 # ---
 #
 # ### 🎯 Recommended revision order
