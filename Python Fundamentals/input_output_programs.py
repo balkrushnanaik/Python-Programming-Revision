@@ -228,7 +228,15 @@ print(f"Subtotal: {subtotal}")
 #     * HRA = 20% of basic salary
 #     * DA = 10% of basic salary
 #     * Gross salary = Basic + HRA + DA
-#
+basic_salary = float(input("Enter basic salary: "))
+hra = basic_salary * 0.20
+da = basic_salary * 0.10
+gross_salary = basic_salary + hra + da
+print(f"HRA: {hra}")
+print(f"DA: {da}")
+print(f"Gross Salary: {gross_salary}")
+print(f"Total Salary is: {gross_salary}")
+print("Thank you for using the Salary Calculator!")
 # 28. **Marks Report**
 #     Take marks of 5 subjects and display a formatted report:
 #
