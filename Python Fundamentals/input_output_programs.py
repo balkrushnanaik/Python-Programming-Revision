@@ -251,7 +251,24 @@ print("Thank you for using the Salary Calculator!")
 # Total: 430
 # Percentage: 86%
 # ```
-#
+name = input("Enter student's name: ")
+maths = int(input("Enter marks in Maths: "))
+science = int(input("Enter marks in Science: "))
+english = int(input("Enter marks in English: "))
+history = int(input("Enter marks in History: "))
+computer = int(input("Enter marks in Computer: "))
+total = maths + science + english + history + computer
+percentage = (total / 500) * 100
+print("----- Student Report -----")
+print(f"Name: {name}")
+print(f"Maths: {maths}")
+print(f"Science: {science}")
+print(f"English: {english}")
+print(f"History: {history}")
+print(f"Computer: {computer}")
+print(f"Total: {total}")
+print(f"Percentage: {percentage}%")
+print("Thank you for using the Marks Report Generator!")
 # 29. **Currency Conversion**
 #     Take an amount in Indian Rupees and convert it into another currency using a conversion rate provided by the user.
 #
