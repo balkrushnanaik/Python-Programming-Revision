@@ -13,6 +13,11 @@ if age >= 18:
 else:
     print("Not Eligible")
 # 3. **Temperature Check:** Write a program that takes the current temperature and prints `"Hot"` if the temperature is greater than 30°C.
+temperature = float(input("Enter the current temperature in °C: "))
+if temperature > 30:
+    print("Hot")
+else:
+    print("Not Hot")
 # 4. **Passing Marks:** Write a program that takes a student's marks and prints `"Pass"` if the marks are 40 or above.
 # 5. **Even Number:** Write a program that takes an integer and prints `"Even"` if the number is divisible by 2.
 # 6. **Multiple of 5:** Write a program that takes a number and prints `"Multiple of 5"` if it is completely divisible by 5.
