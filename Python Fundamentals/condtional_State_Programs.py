@@ -42,6 +42,11 @@ if num1 > num2:
     print(f"First number {num1} is greater than second number {num2}")
 
 # 8. **Discount Eligibility:** Write a program that takes a customer's purchase amount and prints `"Discount Available"` if the amount is ₹5,000 or more.
+purchase_amount = float(input("Enter the purchase amount: "))
+if purchase_amount >= 5000:
+    print("Discount Available")
+else:
+    print("No Discount Available")
 # 9. **Voting Age:** Write a program that takes a person's age and prints `"Can Vote"` if the age is 18 or above.
 # 10. **Password Length:** Write a program that takes a password and prints `"Strong Length"` if its length is at least 8 characters.
 
