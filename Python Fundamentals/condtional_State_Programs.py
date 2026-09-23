@@ -34,8 +34,13 @@ else:
 number = int(input("Enter a number: "))
 if number % 5 == 0:
     print("Multiple of 5")
-    
+
 # 7. **Large Number:** Write a program that takes two numbers and prints the first number if it is greater than the second number.
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+if num1 > num2:
+    print(f"First number {num1} is greater than second number {num2}")
+
 # 8. **Discount Eligibility:** Write a program that takes a customer's purchase amount and prints `"Discount Available"` if the amount is ₹5,000 or more.
 # 9. **Voting Age:** Write a program that takes a person's age and prints `"Can Vote"` if the age is 18 or above.
 # 10. **Password Length:** Write a program that takes a password and prints `"Strong Length"` if its length is at least 8 characters.
