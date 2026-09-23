@@ -19,6 +19,11 @@ if temperature > 30:
 else:
     print("Not Hot")
 # 4. **Passing Marks:** Write a program that takes a student's marks and prints `"Pass"` if the marks are 40 or above.
+marks = float(input("Enter your marks: "))
+if marks >= 40:
+    print("Pass")
+else:
+    print("Fail")
 # 5. **Even Number:** Write a program that takes an integer and prints `"Even"` if the number is divisible by 2.
 # 6. **Multiple of 5:** Write a program that takes a number and prints `"Multiple of 5"` if it is completely divisible by 5.
 # 7. **Large Number:** Write a program that takes two numbers and prints the first number if it is greater than the second number.
