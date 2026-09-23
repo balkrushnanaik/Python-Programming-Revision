@@ -31,6 +31,10 @@ if number % 2 == 0:
 else:
     print("Odd")
 # 6. **Multiple of 5:** Write a program that takes a number and prints `"Multiple of 5"` if it is completely divisible by 5.
+number = int(input("Enter a number: "))
+if number % 5 == 0:
+    print("Multiple of 5")
+    
 # 7. **Large Number:** Write a program that takes two numbers and prints the first number if it is greater than the second number.
 # 8. **Discount Eligibility:** Write a program that takes a customer's purchase amount and prints `"Discount Available"` if the amount is ₹5,000 or more.
 # 9. **Voting Age:** Write a program that takes a person's age and prints `"Can Vote"` if the age is 18 or above.
