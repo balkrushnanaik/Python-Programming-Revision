@@ -25,6 +25,11 @@ if marks >= 40:
 else:
     print("Fail")
 # 5. **Even Number:** Write a program that takes an integer and prints `"Even"` if the number is divisible by 2.
+number = int(input("Enter an integer: "))
+if number % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
 # 6. **Multiple of 5:** Write a program that takes a number and prints `"Multiple of 5"` if it is completely divisible by 5.
 # 7. **Large Number:** Write a program that takes two numbers and prints the first number if it is greater than the second number.
 # 8. **Discount Eligibility:** Write a program that takes a customer's purchase amount and prints `"Discount Available"` if the amount is ₹5,000 or more.
