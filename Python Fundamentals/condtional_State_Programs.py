@@ -114,6 +114,11 @@ elif age >= 60:
 else:  
     print("Invalid age")
 # 23. **Number Sign:** Write a program that takes a number and prints `"Positive"`, `"Negative"`, or `"Zero"` based on its value.
+number = float(input("Enter a number: "))
+if number > 0:  
+    print("Positive")
+elif number < 0:
+    print("Negative")   
 # 24. **Largest of Three:** Write a program that takes three numbers and prints which number is the largest.
 # 25. **Day of Week:** Write a program that takes a number from 1 to 7 and prints the corresponding day of the week.
 # 26. **Month Days:** Write a program that takes a month number and prints the number of days in that month.
