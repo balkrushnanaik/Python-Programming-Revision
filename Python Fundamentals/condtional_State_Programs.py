@@ -120,6 +120,15 @@ if number > 0:
 elif number < 0:
     print("Negative")   
 # 24. **Largest of Three:** Write a program that takes three numbers and prints which number is the largest.
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+if num1 >= num2 and num1 >= num3:
+    print(f"{num1} is the largest")
+elif num2 >= num1 and num2 >= num3:
+    print(f"{num2} is the largest")
+else:
+    print(f"{num3} is the largest")
 # 25. **Day of Week:** Write a program that takes a number from 1 to 7 and prints the corresponding day of the week.
 # 26. **Month Days:** Write a program that takes a month number and prints the number of days in that month.
 # 27. **Temperature Category:** Write a program that takes temperature and prints `"Cold"` below 15°C, `"Normal"` from 15–30°C, and `"Hot"` above 30°C.
