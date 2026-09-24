@@ -75,6 +75,11 @@ if number >= 0:
 else:
     print("Negative")
 # 13. **Pass or Fail:** Write a program that takes marks and prints `"Pass"` when marks are 40 or above, otherwise prints `"Fail"`.
+marks = float(input("Enter your marks: "))
+if marks >= 40:
+    print("Pass")   
+else:
+    print("Fail")
 # 14. **Eligible for Driving:** Write a program that takes age and prints `"Eligible"` if the age is 18 or above, otherwise prints `"Not Eligible"`.
 # 15. **Greater Number:** Write a program that takes two numbers and prints the greater number, or `"Both are equal"` if they have the same value.
 # 16. **Divisible by 3:** Write a program that takes a number and prints `"Divisible"` if it is divisible by 3, otherwise prints `"Not Divisible"`.
