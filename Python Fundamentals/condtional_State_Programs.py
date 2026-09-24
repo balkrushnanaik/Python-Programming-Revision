@@ -102,6 +102,17 @@ elif marks >= 40:
 else:
     print("Fail")
 # 22. **Age Category:** Write a program that takes age and classifies the person as `"Child"` for 0–12, `"Teenager"` for 13–19, `"Adult"` for 20–59, and `"Senior Citizen"` for 60 or above.
+age = int(input("Enter your age: "))
+if age >= 0 and age <= 12:
+    print("Child")
+elif age >= 13 and age <= 19:
+    print("Teenager")
+elif age >= 20 and age <= 59:
+    print("Adult")
+elif age >= 60:
+    print("Senior Citizen")
+else:  
+    print("Invalid age")
 # 23. **Number Sign:** Write a program that takes a number and prints `"Positive"`, `"Negative"`, or `"Zero"` based on its value.
 # 24. **Largest of Three:** Write a program that takes three numbers and prints which number is the largest.
 # 25. **Day of Week:** Write a program that takes a number from 1 to 7 and prints the corresponding day of the week.
