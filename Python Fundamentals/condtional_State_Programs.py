@@ -81,6 +81,7 @@ if marks >= 40:
 else:
     print("Fail")
 # 14. **Eligible for Driving:** Write a program that takes age and prints `"Eligible"` if the age is 18 or above, otherwise prints `"Not Eligible"`.
+
 # 15. **Greater Number:** Write a program that takes two numbers and prints the greater number, or `"Both are equal"` if they have the same value.
 # 16. **Divisible by 3:** Write a program that takes a number and prints `"Divisible"` if it is divisible by 3, otherwise prints `"Not Divisible"`.
 # 17. **Profit or Loss:** Write a program that takes cost price and selling price and prints `"Profit"` if selling price is greater than cost price, otherwise prints `"Loss"`.
