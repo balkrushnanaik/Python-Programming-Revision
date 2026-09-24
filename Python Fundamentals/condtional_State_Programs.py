@@ -92,6 +92,15 @@ else:
 # ## 🟠 Level 3 — `if-elif-else`
 
 # 21. **Grade Calculator:** Write a program that takes marks and prints `"A"` for marks 80–100, `"B"` for 60–79, `"C"` for 40–59, and `"Fail"` for below 40.
+marks = float(input("Enter your marks: "))
+if marks >= 80:
+    print("Grade A")
+elif marks >= 60:
+    print("Grade B")
+elif marks >= 40:
+    print("Grade C")
+else:
+    print("Fail")
 # 22. **Age Category:** Write a program that takes age and classifies the person as `"Child"` for 0–12, `"Teenager"` for 13–19, `"Adult"` for 20–59, and `"Senior Citizen"` for 60 or above.
 # 23. **Number Sign:** Write a program that takes a number and prints `"Positive"`, `"Negative"`, or `"Zero"` based on its value.
 # 24. **Largest of Three:** Write a program that takes three numbers and prints which number is the largest.
