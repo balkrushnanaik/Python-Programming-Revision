@@ -69,6 +69,11 @@ if number % 2 == 0:
 else:   
     print("Odd")
 # 12. **Positive or Negative:** Write a program that takes a number and prints `"Positive"` if it is greater than or equal to 0, otherwise prints `"Negative"`.
+number = float(input("Enter a number: "))
+if number >= 0:
+    print("Positive")
+else:
+    print("Negative")
 # 13. **Pass or Fail:** Write a program that takes marks and prints `"Pass"` when marks are 40 or above, otherwise prints `"Fail"`.
 # 14. **Eligible for Driving:** Write a program that takes age and prints `"Eligible"` if the age is 18 or above, otherwise prints `"Not Eligible"`.
 # 15. **Greater Number:** Write a program that takes two numbers and prints the greater number, or `"Both are equal"` if they have the same value.
