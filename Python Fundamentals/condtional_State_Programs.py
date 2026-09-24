@@ -48,6 +48,11 @@ if purchase_amount >= 5000:
 else:
     print("No Discount Available")
 # 9. **Voting Age:** Write a program that takes a person's age and prints `"Can Vote"` if the age is 18 or above.
+age = int(input("Enter your age: "))
+if age >= 18:
+    print("Can Vote")
+else:
+    print("Cannot Vote")
 # 10. **Password Length:** Write a program that takes a password and prints `"Strong Length"` if its length is at least 8 characters.
 
 # ## 🟡 Level 2 — `if-else`
