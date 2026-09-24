@@ -63,6 +63,11 @@ else:
 # ## 🟡 Level 2 — `if-else`
 
 # 11. **Even or Odd:** Write a program that takes an integer and prints whether the number is `"Even"` or `"Odd"`.
+number = int(input("Enter an integer: "))
+if number % 2 == 0:
+    print("Even")
+else:   
+    print("Odd")
 # 12. **Positive or Negative:** Write a program that takes a number and prints `"Positive"` if it is greater than or equal to 0, otherwise prints `"Negative"`.
 # 13. **Pass or Fail:** Write a program that takes marks and prints `"Pass"` when marks are 40 or above, otherwise prints `"Fail"`.
 # 14. **Eligible for Driving:** Write a program that takes age and prints `"Eligible"` if the age is 18 or above, otherwise prints `"Not Eligible"`.
