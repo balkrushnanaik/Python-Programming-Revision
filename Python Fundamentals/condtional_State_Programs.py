@@ -54,6 +54,11 @@ if age >= 18:
 else:
     print("Cannot Vote")
 # 10. **Password Length:** Write a program that takes a password and prints `"Strong Length"` if its length is at least 8 characters.
+password = input("Enter your password: ")
+if len(password) >= 8:
+    print("Strong Length")
+else:
+    print("Weak Length")
 
 # ## 🟡 Level 2 — `if-else`
 
