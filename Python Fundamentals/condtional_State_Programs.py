@@ -148,6 +148,12 @@ elif day == 7:
 else:
     print("Invalid input. Please enter a number between 1 and 7.")
 # 26. **Month Days:** Write a program that takes a month number and prints the number of days in that month.
+month = int(input("Enter a month number (1-12): "))
+if month == 2:          
+    print("28 or 29 days (February)")
+elif month in [4, 6, 9, 11]:
+    print("30 days")    
+
 # 27. **Temperature Category:** Write a program that takes temperature and prints `"Cold"` below 15°C, `"Normal"` from 15–30°C, and `"Hot"` above 30°C.
 # 28. **Electricity Bill:** Write a program that takes electricity units and calculates the bill using different rates for different consumption ranges.
 # 29. **BMI Category:** Write a program that takes BMI and prints `"Underweight"`, `"Normal"`, `"Overweight"`, or `"Obese"` according to standard BMI ranges.
