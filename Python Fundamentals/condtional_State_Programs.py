@@ -130,6 +130,23 @@ elif num2 >= num1 and num2 >= num3:
 else:
     print(f"{num3} is the largest")
 # 25. **Day of Week:** Write a program that takes a number from 1 to 7 and prints the corresponding day of the week.
+day = int(input("Enter a number (1-7) for the day of the week: "))
+if day == 1:
+    print("Monday")
+elif day == 2:
+    print("Tuesday")
+elif day == 3:
+    print("Wednesday")
+elif day == 4:
+    print("Thursday")
+elif day == 5:
+    print("Friday")
+elif day == 6:
+    print("Saturday")
+elif day == 7:
+    print("Sunday")
+else:
+    print("Invalid input. Please enter a number between 1 and 7.")
 # 26. **Month Days:** Write a program that takes a month number and prints the number of days in that month.
 # 27. **Temperature Category:** Write a program that takes temperature and prints `"Cold"` below 15°C, `"Normal"` from 15–30°C, and `"Hot"` above 30°C.
 # 28. **Electricity Bill:** Write a program that takes electricity units and calculates the bill using different rates for different consumption ranges.
