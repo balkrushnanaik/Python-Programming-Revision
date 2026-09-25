@@ -155,6 +155,13 @@ elif month in [4, 6, 9, 11]:
     print("30 days")    
 
 # 27. **Temperature Category:** Write a program that takes temperature and prints `"Cold"` below 15°C, `"Normal"` from 15–30°C, and `"Hot"` above 30°C.
+temperature = float(input("Enter the temperature in °C: "))
+if temperature < 15:
+    print("Cold")
+elif 15 <= temperature <= 30:
+    print("Normal")
+else:
+    print("Hot")
 # 28. **Electricity Bill:** Write a program that takes electricity units and calculates the bill using different rates for different consumption ranges.
 # 29. **BMI Category:** Write a program that takes BMI and prints `"Underweight"`, `"Normal"`, `"Overweight"`, or `"Obese"` according to standard BMI ranges.
 # 30. **Simple Calculator:** Write a program that takes two numbers and an operator (`+`, `-`, `*`, `/`) and performs the selected operation.
