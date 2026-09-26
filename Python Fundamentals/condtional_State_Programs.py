@@ -202,6 +202,12 @@ print(f"Result: {result}")
 # ## 🔵 Level 4 — Logical Operators
 
 # 31. **Voting Eligibility:** Write a program that checks whether a person is at least 18 years old and has Indian citizenship before displaying `"Eligible to Vote"`.
+age = int(input("Enter your age: "))
+citizenship = input("Are you an Indian citizen? (yes/no): ").strip().lower()
+if age >= 18 and citizenship == 'yes':
+    print("Eligible to Vote")
+else:
+    print("Not Eligible to Vote")
 # 32. **Scholarship Eligibility:** Write a program that checks whether a student's marks are at least 75 and family income is below ₹3,00,000 to determine scholarship eligibility.
 # 33. **Login Validation:** Write a program that checks whether both username and password are correct before allowing the user to log in.
 # 34. **Driving License:** Write a program that checks whether a person's age is at least 18 and they have passed the driving test.
