@@ -163,6 +163,16 @@ elif 15 <= temperature <= 30:
 else:
     print("Hot")
 # 28. **Electricity Bill:** Write a program that takes electricity units and calculates the bill using different rates for different consumption ranges.
+units = float(input("Enter electricity units consumed: "))
+if units <= 100:
+    bill = units * 5
+elif units <= 200:
+    bill = (100 * 5) + ((units - 100) * 7)
+elif units <= 300:
+    bill = (100 * 5) + (100 * 7) + ((units - 200) * 10)
+else:
+    bill = (100 * 5) + (100 * 7) + (100 * 10) + ((units - 300) * 15)    
+print(f"Total electricity bill: ₹{bill}")
 # 29. **BMI Category:** Write a program that takes BMI and prints `"Underweight"`, `"Normal"`, `"Overweight"`, or `"Obese"` according to standard BMI ranges.
 # 30. **Simple Calculator:** Write a program that takes two numbers and an operator (`+`, `-`, `*`, `/`) and performs the selected operation.
 
