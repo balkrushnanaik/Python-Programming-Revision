@@ -184,7 +184,21 @@ elif 25 <= bmi < 29.9:
 else:
     print("Obese")
 # 30. **Simple Calculator:** Write a program that takes two numbers and an operator (`+`, `-`, `*`, `/`) and performs the selected operation.
-
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+operator = input("Enter an operator (+, -, *, /): ")
+if operator == '+':
+    result = num1 + num2
+elif operator == '-':
+    result = num1 - num2
+elif operator == '*':
+    result = num1 * num2
+elif operator == '/':
+    if num2 != 0:
+        result = num1 / num2
+    else:
+        result = "Error: Division by zero"
+print(f"Result: {result}")
 # ## 🔵 Level 4 — Logical Operators
 
 # 31. **Voting Eligibility:** Write a program that checks whether a person is at least 18 years old and has Indian citizenship before displaying `"Eligible to Vote"`.
