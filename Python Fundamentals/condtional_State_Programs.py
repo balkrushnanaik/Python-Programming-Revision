@@ -174,6 +174,15 @@ else:
     bill = (100 * 5) + (100 * 7) + (100 * 10) + ((units - 300) * 15)    
 print(f"Total electricity bill: ₹{bill}")
 # 29. **BMI Category:** Write a program that takes BMI and prints `"Underweight"`, `"Normal"`, `"Overweight"`, or `"Obese"` according to standard BMI ranges.
+bmi = float(input("Enter your BMI: "))
+if bmi < 18.5:
+    print("Underweight")
+elif 18.5 <= bmi < 24.9:
+    print("Normal")
+elif 25 <= bmi < 29.9:
+    print("Overweight")
+else:
+    print("Obese")
 # 30. **Simple Calculator:** Write a program that takes two numbers and an operator (`+`, `-`, `*`, `/`) and performs the selected operation.
 
 # ## 🔵 Level 4 — Logical Operators
