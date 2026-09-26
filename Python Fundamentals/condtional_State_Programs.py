@@ -209,6 +209,12 @@ if age >= 18 and citizenship == 'yes':
 else:
     print("Not Eligible to Vote")
 # 32. **Scholarship Eligibility:** Write a program that checks whether a student's marks are at least 75 and family income is below ₹3,00,000 to determine scholarship eligibility.
+marks = float(input("Enter your marks: "))
+family_income = float(input("Enter your family income: "))
+if marks >= 75 and family_income < 300000:
+    print("Eligible for Scholarship")
+else:
+    print("Not Eligible for Scholarship")
 # 33. **Login Validation:** Write a program that checks whether both username and password are correct before allowing the user to log in.
 # 34. **Driving License:** Write a program that checks whether a person's age is at least 18 and they have passed the driving test.
 # 35. **College Admission:** Write a program that checks whether a student's percentage is at least 60 and entrance exam score is at least 50.
