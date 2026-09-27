@@ -223,6 +223,12 @@ if username == "admin" and password == "password123":
 else:
     print("Invalid Credentials")
 # 34. **Driving License:** Write a program that checks whether a person's age is at least 18 and they have passed the driving test.
+age = int(input("Enter your age: "))
+driving_test_passed = input("Have you passed the driving test? (yes/no): ").strip().lower()
+if age >= 18 and driving_test_passed == 'yes':
+    print("Eligible for Driving License")
+else:
+    print("Not Eligible for Driving License")
 # 35. **College Admission:** Write a program that checks whether a student's percentage is at least 60 and entrance exam score is at least 50.
 # 36. **Discount Eligibility:** Write a program that gives a discount if the customer is a member **or** has purchased goods worth more than ₹10,000.
 # 37. **Exam Eligibility:** Write a program that checks whether a student's attendance is at least 75% and internal marks are at least 40.
