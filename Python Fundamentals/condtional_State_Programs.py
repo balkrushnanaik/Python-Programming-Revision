@@ -230,6 +230,12 @@ if age >= 18 and driving_test_passed == 'yes':
 else:
     print("Not Eligible for Driving License")
 # 35. **College Admission:** Write a program that checks whether a student's percentage is at least 60 and entrance exam score is at least 50.
+percentage = float(input("Enter your percentage: "))
+entrance_exam_score = float(input("Enter your entrance exam score: "))
+if percentage >= 60 and entrance_exam_score >= 50:
+    print("Eligible for College Admission")
+else:
+    print("Not Eligible for College Admission")
 # 36. **Discount Eligibility:** Write a program that gives a discount if the customer is a member **or** has purchased goods worth more than ₹10,000.
 # 37. **Exam Eligibility:** Write a program that checks whether a student's attendance is at least 75% and internal marks are at least 40.
 # 38. **Job Eligibility:** Write a program that checks whether a candidate has a degree and at least two years of relevant experience.
