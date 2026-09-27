@@ -237,6 +237,12 @@ if percentage >= 60 and entrance_exam_score >= 50:
 else:
     print("Not Eligible for College Admission")
 # 36. **Discount Eligibility:** Write a program that gives a discount if the customer is a member **or** has purchased goods worth more than ₹10,000.
+is_member = input("Are you a member? (yes/no): ").strip().lower()
+purchase_amount = float(input("Enter the purchase amount: "))
+if is_member == 'yes' or purchase_amount > 10000:
+    print("Discount Applicable")
+else:
+    print("No Discount Applicable")
 # 37. **Exam Eligibility:** Write a program that checks whether a student's attendance is at least 75% and internal marks are at least 40.
 # 38. **Job Eligibility:** Write a program that checks whether a candidate has a degree and at least two years of relevant experience.
 # 39. **ATM Withdrawal:** Write a program that allows withdrawal only when the requested amount is within the account balance and is a multiple of ₹100.
