@@ -244,6 +244,12 @@ if is_member == 'yes' or purchase_amount > 10000:
 else:
     print("No Discount Applicable")
 # 37. **Exam Eligibility:** Write a program that checks whether a student's attendance is at least 75% and internal marks are at least 40.
+attendance = float(input("Enter your attendance percentage: "))
+internal_marks = float(input("Enter your internal marks: "))
+if attendance >= 75 and internal_marks >= 40:
+    print("Eligible for Exam") 
+else:
+    print("Not Eligible for Exam")
 # 38. **Job Eligibility:** Write a program that checks whether a candidate has a degree and at least two years of relevant experience.
 # 39. **ATM Withdrawal:** Write a program that allows withdrawal only when the requested amount is within the account balance and is a multiple of ₹100.
 # 40. **Password Validation:** Write a program that checks whether a password has at least 8 characters and contains a digit.
