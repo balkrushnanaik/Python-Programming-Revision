@@ -216,6 +216,12 @@ if marks >= 75 and family_income < 300000:
 else:
     print("Not Eligible for Scholarship")
 # 33. **Login Validation:** Write a program that checks whether both username and password are correct before allowing the user to log in.
+username = input("Enter username: ")
+password = input("Enter password: ")
+if username == "admin" and password == "password123":
+    print("Login Successful")
+else:
+    print("Invalid Credentials")
 # 34. **Driving License:** Write a program that checks whether a person's age is at least 18 and they have passed the driving test.
 # 35. **College Admission:** Write a program that checks whether a student's percentage is at least 60 and entrance exam score is at least 50.
 # 36. **Discount Eligibility:** Write a program that gives a discount if the customer is a member **or** has purchased goods worth more than ₹10,000.
