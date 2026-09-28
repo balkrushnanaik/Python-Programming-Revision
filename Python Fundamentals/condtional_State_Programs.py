@@ -258,7 +258,12 @@ if has_degree == "yes" and years_of_experience >= 2:
 else:
     print("You are not eligible for job")
 # 39. **ATM Withdrawal:** Write a program that allows withdrawal only when the requested amount is within the account balance and is a multiple of ₹100.
-
+money = float(input("Enter your account balance: "))
+withdrawal_amount = float(input("Enter the amount you want to withdraw: "))
+if withdrawal_amount <= money and withdrawal_amount % 100 == 0:
+    print("Withdrawal Successful")
+else:
+    print("Withdrawal Failed: Check your balance or ensure the amount is a multiple of ₹100")
 # 40. **Password Validation:** Write a program that checks whether a password has at least 8 characters and contains a digit.
 
 # ## 🔴 Level 5 — Nested Conditional Statements
