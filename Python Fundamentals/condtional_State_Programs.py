@@ -251,6 +251,12 @@ if attendance >= 75 and internal_marks >= 40:
 else:
     print("Not Eligible for Exam")
 # 38. **Job Eligibility:** Write a program that checks whether a candidate has a degree and at least two years of relevant experience.
+has_degree = input("Do you have a degree? (yes/no): ").strip().lower()
+years_of_experience = int(input("Enter your years of relevant experience: "))
+if has_degree == "Yes" and years_of_experience == 2:
+    print("You are eligible for job")
+else:
+    print("You are not eligible for job")
 # 39. **ATM Withdrawal:** Write a program that allows withdrawal only when the requested amount is within the account balance and is a multiple of ₹100.
 # 40. **Password Validation:** Write a program that checks whether a password has at least 8 characters and contains a digit.
 
