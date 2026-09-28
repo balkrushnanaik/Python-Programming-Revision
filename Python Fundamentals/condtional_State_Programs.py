@@ -253,13 +253,18 @@ else:
 # 38. **Job Eligibility:** Write a program that checks whether a candidate has a degree and at least two years of relevant experience.
 has_degree = input("Do you have a degree? (yes/no): ").strip().lower()
 years_of_experience = int(input("Enter your years of relevant experience: "))
-if has_degree == "Yes" and years_of_experience == 2:
+if has_degree == "yes" and years_of_experience >= 2:
     print("You are eligible for job")
 else:
     print("You are not eligible for job")
 # 39. **ATM Withdrawal:** Write a program that allows withdrawal only when the requested amount is within the account balance and is a multiple of ₹100.
-# 40. **Password Validation:** Write a program that checks whether a password has at least 8 characters and contains a digit.
 
+# 40. **Password Validation:** Write a program that checks whether a password has at least 8 characters and contains a digit.
+password = input("Enter your password: ")
+if len(password) >= 8 and any(char.isdigit() for char in password):
+    print("Password is valid")
+else:
+    print("Password is invalid. It must be at least 8 characters long and contain at least one digit.")
 # ## 🔴 Level 5 — Nested Conditional Statements
 
 # 41. **ATM Transaction:** Write a program that first checks whether the PIN is correct and, if correct, checks whether the requested withdrawal amount is available in the account.
