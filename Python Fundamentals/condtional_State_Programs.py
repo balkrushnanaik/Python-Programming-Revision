@@ -273,6 +273,18 @@ else:
 # ## 🔴 Level 5 — Nested Conditional Statements
 
 # 41. **ATM Transaction:** Write a program that first checks whether the PIN is correct and, if correct, checks whether the requested withdrawal amount is available in the account.
+pin = int(input("Enter your PIN: "))
+correct_pin = 1234  # Example correct PIN
+if pin == correct_pin:
+    withdrawal_amount = float(input("Enter the amount you want to withdraw: "))
+    account_balance = float(input("Enter your account balance: "))
+    if withdrawal_amount <= account_balance:
+        print("Withdrawal Successful")
+    else:
+        print("Insufficient Balance")
+else:
+    print("Incorrect PIN. Please try again.")
+
 # 42. **College Admission:** Write a program that first checks whether the student's percentage meets the minimum requirement and then checks their entrance exam score.
 # 43. **Shopping Discount:** Write a program that first checks whether the purchase amount is above ₹5,000 and then determines the discount based on whether the customer is a member.
 # 44. **Employee Bonus:** Write a program that first checks whether an employee has completed one year and then checks their performance rating to determine the bonus.
