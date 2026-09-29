@@ -9,8 +9,12 @@ def greet_user(name):
 greeting_message = greet_user(name)
 print(greeting_message)
 # 2. **Create a function `add_numbers()` that accepts two numbers and returns their sum without printing the result inside the function.**
+num1 = 10
+num2 = 20
 def add_numbers(num1, num2):
     return num1 + num2
+addition_result = add_numbers(num1, num2)
+print(f"The sum of {num1} and {num2} is: {addition_result}")
 
 # 3. **Create a function `calculate_difference()` that accepts two numbers and returns the difference between the first and second number.**
 # 4. **Create a function `multiply_numbers()` that accepts two numbers and returns their multiplication result.**
