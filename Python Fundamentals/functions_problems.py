@@ -9,6 +9,9 @@ def greet_user(name):
 greeting_message = greet_user(name)
 print(greeting_message)
 # 2. **Create a function `add_numbers()` that accepts two numbers and returns their sum without printing the result inside the function.**
+def add_numbers(num1, num2):
+    return num1 + num2
+
 # 3. **Create a function `calculate_difference()` that accepts two numbers and returns the difference between the first and second number.**
 # 4. **Create a function `multiply_numbers()` that accepts two numbers and returns their multiplication result.**
 # 5. **Create a function `divide_numbers()` that accepts two numbers and returns their division result while safely handling division by zero.**
