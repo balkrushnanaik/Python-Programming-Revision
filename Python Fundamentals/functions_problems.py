@@ -17,7 +17,12 @@ addition_result = add_numbers(num1, num2)
 print(f"The sum of {num1} and {num2} is: {addition_result}")
 
 # 3. **Create a function `calculate_difference()` that accepts two numbers and returns the difference between the first and second number.**
+
 # 4. **Create a function `multiply_numbers()` that accepts two numbers and returns their multiplication result.**
+def multiply_numbers(num1, num2):
+    return num1 * num2
+multiplication_result = multiply_numbers(num1, num2)
+print(f"The multiplication of {num1} and {num2} is: {multiplication_result}")
 # 5. **Create a function `divide_numbers()` that accepts two numbers and returns their division result while safely handling division by zero.**
 # 6. **Create a function `square_number()` that accepts a number and returns its square using an arithmetic operation.**
 # 7. **Create a function `cube_number()` that accepts a number and returns its cube.**
