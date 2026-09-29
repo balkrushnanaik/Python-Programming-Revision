@@ -286,6 +286,17 @@ else:
     print("Incorrect PIN. Please try again.")
 
 # 42. **College Admission:** Write a program that first checks whether the student's percentage meets the minimum requirement and then checks their entrance exam score.
+percentage = float(input("Enter your percentage: "))
+minimum_percentage = 60  # Example minimum percentage requirement
+if percentage >= minimum_percentage:
+    entrance_exam_score = float(input("Enter your entrance exam score: "))
+    minimum_exam_score = 50  # Example minimum exam score requirement
+    if entrance_exam_score >= minimum_exam_score:
+        print("Eligible for College Admission")
+    else:
+        print("Not Eligible: Entrance exam score is below the required minimum.")
+else:
+    print("Not Eligible: Percentage is below the required minimum.")
 # 43. **Shopping Discount:** Write a program that first checks whether the purchase amount is above ₹5,000 and then determines the discount based on whether the customer is a member.
 # 44. **Employee Bonus:** Write a program that first checks whether an employee has completed one year and then checks their performance rating to determine the bonus.
 # 45. **Bank Loan:** Write a program that first checks the applicant's age and then checks their salary and credit score before approving the loan.
