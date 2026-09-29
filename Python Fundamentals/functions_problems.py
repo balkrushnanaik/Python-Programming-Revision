@@ -27,6 +27,12 @@ def multiply_numbers(num1, num2):
 multiplication_result = multiply_numbers(num1, num2)
 print(f"The multiplication of {num1} and {num2} is: {multiplication_result}")
 # 5. **Create a function `divide_numbers()` that accepts two numbers and returns their division result while safely handling division by zero.**
+def divide_numbers(num1, num2):
+    if num2 == 0:
+        return "Error: Division by zero is not allowed."
+    return num1 / num2  
+devision_result = divide_numbers(num1, num2)
+print(f"The division of {num1} by {num2} is: {devision_result}")
 # 6. **Create a function `square_number()` that accepts a number and returns its square using an arithmetic operation.**
 # 7. **Create a function `cube_number()` that accepts a number and returns its cube.**
 # 8. **Create a function `is_even()` that accepts an integer and returns `True` if the number is even and `False` otherwise.**
