@@ -59,6 +59,13 @@ def is_positive(num):
 positive_check = is_positive(num1)
 print(f"The number {num1} is: {positive_check}")
 # 10. **Create a function `find_max()` that accepts two numbers and returns the larger number without using Python's built-in `max()` function.**
+def find_max(num1, num2):
+    if num1 > num2:
+        return num1
+    else:
+        return num2
+max_result = find_max(num1, num2)
+print(f"The larger number between {num1} and {num2} is: {max_result}")     
 
 # ## 🟢 Level 2 — Functions with Conditions
 
