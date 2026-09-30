@@ -49,6 +49,15 @@ def is_even(num):
 even_check = is_even(num1)
 print(f"Is {num1} even? {even_check}")
 # 9. **Create a function `is_positive()` that accepts a number and determines whether the number is positive, negative, or zero.**
+def is_positive(num):
+    if num > 0:
+        return "Positive"
+    elif num < 0:
+        return "Negative"
+    else:
+        return "Zero"
+positive_check = is_positive(num1)
+print(f"The number {num1} is: {positive_check}")
 # 10. **Create a function `find_max()` that accepts two numbers and returns the larger number without using Python's built-in `max()` function.**
 
 # ## 🟢 Level 2 — Functions with Conditions
