@@ -34,6 +34,10 @@ def divide_numbers(num1, num2):
 devision_result = divide_numbers(num1, num2)
 print(f"The division of {num1} by {num2} is: {devision_result}")
 # 6. **Create a function `square_number()` that accepts a number and returns its square using an arithmetic operation.**
+def square_number(num):
+    return num ** 2
+square_result = square_number(num1)
+print(f"The square of {num1} is: {square_result}")
 # 7. **Create a function `cube_number()` that accepts a number and returns its cube.**
 # 8. **Create a function `is_even()` that accepts an integer and returns `True` if the number is even and `False` otherwise.**
 # 9. **Create a function `is_positive()` that accepts a number and determines whether the number is positive, negative, or zero.**
