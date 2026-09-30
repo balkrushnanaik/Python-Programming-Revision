@@ -39,6 +39,10 @@ def square_number(num):
 square_result = square_number(num1)
 print(f"The square of {num1} is: {square_result}")
 # 7. **Create a function `cube_number()` that accepts a number and returns its cube.**
+def cube_number(num):
+    return num ** 3
+cube_result = cube_number(num1)
+print(f"The cube of {num1} is: {cube_result}")
 # 8. **Create a function `is_even()` that accepts an integer and returns `True` if the number is even and `False` otherwise.**
 # 9. **Create a function `is_positive()` that accepts a number and determines whether the number is positive, negative, or zero.**
 # 10. **Create a function `find_max()` that accepts two numbers and returns the larger number without using Python's built-in `max()` function.**
