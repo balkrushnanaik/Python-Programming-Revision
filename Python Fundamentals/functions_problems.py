@@ -70,6 +70,13 @@ print(f"The larger number between {num1} and {num2} is: {max_result}")
 # ## 🟢 Level 2 — Functions with Conditions
 
 # 11. **Create a function `check_eligibility()` that accepts a person's age and returns whether the person is eligible to vote based on the legal voting age of 18.**
+def check_eligibility(age):
+    if age >= 18:
+        return "Eligible to vote"
+    else:
+        return "Not eligible to vote"
+eligibility_check = check_eligibility(20)
+print(f"Age 20: {eligibility_check}")
 # 12. **Create a function `check_number()` that accepts an integer and returns `"Positive"`, `"Negative"`, or `"Zero"` depending on its value.**
 # 13. **Create a function `find_largest()` that accepts three numbers and returns the largest number without using the built-in `max()` function.**
 # 14. **Create a function `check_divisibility()` that accepts two integers and returns whether the first number is completely divisible by the second number.**
