@@ -88,6 +88,17 @@ def check_number(num):
 number_check = check_number(-5)
 print(f"The number -5 is: {number_check}")
 # 13. **Create a function `find_largest()` that accepts three numbers and returns the largest number without using the built-in `max()` function.**
+def find_largest(num1, num2, num3):
+    if num1 >= num2 and num1 >= num3:
+        return num1
+    elif num2 >= num1 and num2 >= num3:
+        return num2
+    else:
+        return num3
+largest_result = find_largest(10, 20, 15)
+print(f"The largest number among 10, 20, and 15 is: {largest_result}")
+
+
 # 14. **Create a function `check_divisibility()` that accepts two integers and returns whether the first number is completely divisible by the second number.**
 # 15. **Create a function `calculate_grade()` that accepts a student's marks and returns a grade based on predefined marks ranges such as A, B, C, D, and F.**
 # 16. **Create a function `calculate_discount()` that accepts a product price and discount percentage and returns the final price after applying the discount.**
