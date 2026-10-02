@@ -100,6 +100,15 @@ print(f"The largest number among 10, 20, and 15 is: {largest_result}")
 
 
 # 14. **Create a function `check_divisibility()` that accepts two integers and returns whether the first number is completely divisible by the second number.**
+def check_divisibility(num1, num2):
+    if num2 == 0:
+        return "Error: Division by zero is not allowed."
+    if num1 % num2 == 0:
+        return f"{num1} is completely divisible by {num2}."
+    else:
+        return f"{num1} is not completely divisible by {num2}."
+divisibility_check = check_divisibility(10, 2)
+print(divisibility_check)
 # 15. **Create a function `calculate_grade()` that accepts a student's marks and returns a grade based on predefined marks ranges such as A, B, C, D, and F.**
 # 16. **Create a function `calculate_discount()` that accepts a product price and discount percentage and returns the final price after applying the discount.**
 # 17. **Create a function `calculate_tax()` that accepts an income amount and calculates the tax according to different income slabs.**
