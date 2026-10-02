@@ -110,6 +110,19 @@ def check_divisibility(num1, num2):
 divisibility_check = check_divisibility(10, 2)
 print(divisibility_check)
 # 15. **Create a function `calculate_grade()` that accepts a student's marks and returns a grade based on predefined marks ranges such as A, B, C, D, and F.**
+def calculate_grade(marks):
+    if marks >= 90:
+        return "A"
+    elif marks >= 80:
+        return "B"
+    elif marks >= 70:
+        return "C"
+    elif marks >= 60:
+        return "D"
+    else:
+        return "F"
+grade_result = calculate_grade(85)
+print(f"The grade for marks 85 is: {grade_result}")
 # 16. **Create a function `calculate_discount()` that accepts a product price and discount percentage and returns the final price after applying the discount.**
 # 17. **Create a function `calculate_tax()` that accepts an income amount and calculates the tax according to different income slabs.**
 # 18. **Create a function `is_leap_year()` that accepts a year and returns whether the given year is a leap year according to the standard leap-year rules.**
