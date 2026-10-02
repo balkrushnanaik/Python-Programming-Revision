@@ -78,6 +78,15 @@ def check_eligibility(age):
 eligibility_check = check_eligibility(20)
 print(f"Age 20: {eligibility_check}")
 # 12. **Create a function `check_number()` that accepts an integer and returns `"Positive"`, `"Negative"`, or `"Zero"` depending on its value.**
+def check_number(num):
+    if num > 0:
+        return "Positive"
+    elif num < 0:
+        return "Negative"
+    else:
+        return "Zero"   
+number_check = check_number(-5)
+print(f"The number -5 is: {number_check}")
 # 13. **Create a function `find_largest()` that accepts three numbers and returns the largest number without using the built-in `max()` function.**
 # 14. **Create a function `check_divisibility()` that accepts two integers and returns whether the first number is completely divisible by the second number.**
 # 15. **Create a function `calculate_grade()` that accepts a student's marks and returns a grade based on predefined marks ranges such as A, B, C, D, and F.**
