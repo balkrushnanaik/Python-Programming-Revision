@@ -161,6 +161,21 @@ def check_password(password):
 password_check = check_password("Pass1234")
 print(f"Password check result: {password_check}")
 # 20. **Create a function `calculate_bill()` that accepts the total purchase amount and applies different discount percentages based on the purchase range before returning the final payable amount.**
+def calculate_bill(purchase_amount):
+    if purchase_amount < 100:
+        discount_percentage = 0
+    elif purchase_amount < 500:
+        discount_percentage = 5
+    elif purchase_amount < 1000:
+        discount_percentage = 10
+    else:
+        discount_percentage = 15
+
+    discount_amount = (discount_percentage / 100) * purchase_amount
+    final_amount = purchase_amount - discount_amount
+    return final_amount
+bill_amount = calculate_bill(750)
+print(f"The final bill amount after discount for a purchase of 750 is: {bill_amount}")
 
 # ## 🟡 Level 3 — Functions with Strings
 
