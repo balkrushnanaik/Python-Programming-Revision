@@ -152,6 +152,14 @@ def is_leap_year(year):
 leap_year_check = is_leap_year(2024)
 print(f"Is 2024 a leap year? {leap_year_check}")
 # 19. **Create a function `check_password()` that accepts a password and returns whether it satisfies minimum requirements such as length and the presence of numbers.**
+def check_password(password):
+    if len(password) < 8:
+        return "Password must be at least 8 characters long."
+    if not any(char.isdigit() for char in password):
+        return "Password must contain at least one number."
+    return "Password is valid."
+password_check = check_password("Pass1234")
+print(f"Password check result: {password_check}")
 # 20. **Create a function `calculate_bill()` that accepts the total purchase amount and applies different discount percentages based on the purchase range before returning the final payable amount.**
 
 # ## 🟡 Level 3 — Functions with Strings
