@@ -124,6 +124,12 @@ def calculate_grade(marks):
 grade_result = calculate_grade(85)
 print(f"The grade for marks 85 is: {grade_result}")
 # 16. **Create a function `calculate_discount()` that accepts a product price and discount percentage and returns the final price after applying the discount.**
+def calculate_discount(price, discount_percentage):
+    discount_amount = (discount_percentage / 100) * price
+    final_price = price - discount_amount
+    return final_price
+calculated_price = calculate_discount(1000, 10)
+print(f"The final price after applying 10% discount on 1000 is: {calculated_price}")
 # 17. **Create a function `calculate_tax()` that accepts an income amount and calculates the tax according to different income slabs.**
 # 18. **Create a function `is_leap_year()` that accepts a year and returns whether the given year is a leap year according to the standard leap-year rules.**
 # 19. **Create a function `check_password()` that accepts a password and returns whether it satisfies minimum requirements such as length and the presence of numbers.**
