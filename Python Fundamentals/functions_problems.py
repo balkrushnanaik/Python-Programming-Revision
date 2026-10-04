@@ -131,6 +131,18 @@ def calculate_discount(price, discount_percentage):
 calculated_price = calculate_discount(1000, 10)
 print(f"The final price after applying 10% discount on 1000 is: {calculated_price}")
 # 17. **Create a function `calculate_tax()` that accepts an income amount and calculates the tax according to different income slabs.**
+def calculate_tax(income):  
+    
+    if income <= 250000:
+        return 0
+    elif income <= 500000:
+        return (income - 250000) * 0.05
+    elif income <= 1000000:
+        return (income - 500000) * 0.2 + (250000 * 0.05)
+    else:
+        return (income - 1000000) * 0.3 + (500000 * 0.2) + (250000 * 0.05)
+calculated_tax = calculate_tax(1200000)
+print(f"The tax for an income of 1200000 is: {calculated_tax}")
 # 18. **Create a function `is_leap_year()` that accepts a year and returns whether the given year is a leap year according to the standard leap-year rules.**
 # 19. **Create a function `check_password()` that accepts a password and returns whether it satisfies minimum requirements such as length and the presence of numbers.**
 # 20. **Create a function `calculate_bill()` that accepts the total purchase amount and applies different discount percentages based on the purchase range before returning the final payable amount.**
