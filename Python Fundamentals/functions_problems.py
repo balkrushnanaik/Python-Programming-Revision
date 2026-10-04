@@ -144,6 +144,13 @@ def calculate_tax(income):
 calculated_tax = calculate_tax(1200000)
 print(f"The tax for an income of 1200000 is: {calculated_tax}")
 # 18. **Create a function `is_leap_year()` that accepts a year and returns whether the given year is a leap year according to the standard leap-year rules.**
+def is_leap_year(year):
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        return True
+    else:
+        return False
+leap_year_check = is_leap_year(2024)
+print(f"Is 2024 a leap year? {leap_year_check}")
 # 19. **Create a function `check_password()` that accepts a password and returns whether it satisfies minimum requirements such as length and the presence of numbers.**
 # 20. **Create a function `calculate_bill()` that accepts the total purchase amount and applies different discount percentages based on the purchase range before returning the final payable amount.**
 
