@@ -188,6 +188,15 @@ def count_characters(string):
 check_divisibility = count_characters("Hello, World!")
 print(f"The total number of characters in 'Hello, World!' is: {check_divisibility}")
 # 22. **Create a function `count_vowels()` that accepts a string and returns the total number of vowels present in the string.**
+def count_vowels(string):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in string:
+        if char in vowels:
+            count += 1
+    return count
+vowel_count = count_vowels("Hello, World!")
+print(f"The total number of vowels in 'Hello, World!' is: {vowel_count}")
 # 23. **Create a function `reverse_string()` that accepts a string and returns the string in reverse order without using the built-in `reversed()` function.**
 # 24. **Create a function `is_palindrome()` that accepts a string and determines whether it reads the same forward and backward.**
 # 25. **Create a function `count_words()` that accepts a sentence and returns the number of words contained in the sentence.**
