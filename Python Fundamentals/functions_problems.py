@@ -206,6 +206,11 @@ def reverse_string(string):
 reversed_result = reverse_string("Hello, World!")
 print(f"The reverse of 'Hello, World!' is: {reversed_result}")
 # 24. **Create a function `is_palindrome()` that accepts a string and determines whether it reads the same forward and backward.**
+def is_palindrome(string):
+    cleaned_string = ''.join(char.lower() for char in string if char.isalnum())
+    return cleaned_string == cleaned_string[::-1]
+palindrome_check = is_palindrome("A man, a plan, a canal: Panama")
+print(f"Is 'A man, a plan, a canal: Panama' a palindrome? {palindrome_check}")
 # 25. **Create a function `count_words()` that accepts a sentence and returns the number of words contained in the sentence.**
 # 26. **Create a function `capitalize_words()` that accepts a sentence and returns a new sentence where the first letter of every word is capitalized.**
 # 27. **Create a function `remove_spaces()` that accepts a string and returns the same string after removing all spaces.**
