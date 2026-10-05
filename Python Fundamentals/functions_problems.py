@@ -212,6 +212,11 @@ def is_palindrome(string):
 palindrome_check = is_palindrome("A man, a plan, a canal: Panama")
 print(f"Is 'A man, a plan, a canal: Panama' a palindrome? {palindrome_check}")
 # 25. **Create a function `count_words()` that accepts a sentence and returns the number of words contained in the sentence.**
+def count_words(sentence):
+    words = sentence.split()
+    return len(words)   
+word_count = count_words("Hello, how are you?") 
+print(f"The total number of words in 'Hello, how are you?' is: {word_count}")
 # 26. **Create a function `capitalize_words()` that accepts a sentence and returns a new sentence where the first letter of every word is capitalized.**
 # 27. **Create a function `remove_spaces()` that accepts a string and returns the same string after removing all spaces.**
 # 28. **Create a function `count_character_frequency()` that accepts a string and a character and returns how many times that character appears in the string.**
