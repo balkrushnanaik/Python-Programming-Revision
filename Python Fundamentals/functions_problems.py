@@ -198,6 +198,13 @@ def count_vowels(string):
 vowel_count = count_vowels("Hello, World!")
 print(f"The total number of vowels in 'Hello, World!' is: {vowel_count}")
 # 23. **Create a function `reverse_string()` that accepts a string and returns the string in reverse order without using the built-in `reversed()` function.**
+def reverse_string(string):
+    reversed_str = ""
+    for char in string:
+        reversed_str = char + reversed_str
+    return reversed_str
+reversed_result = reverse_string("Hello, World!")
+print(f"The reverse of 'Hello, World!' is: {reversed_result}")
 # 24. **Create a function `is_palindrome()` that accepts a string and determines whether it reads the same forward and backward.**
 # 25. **Create a function `count_words()` that accepts a sentence and returns the number of words contained in the sentence.**
 # 26. **Create a function `capitalize_words()` that accepts a sentence and returns a new sentence where the first letter of every word is capitalized.**
