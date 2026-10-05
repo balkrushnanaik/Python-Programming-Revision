@@ -180,6 +180,13 @@ print(f"The final bill amount after discount for a purchase of 750 is: {bill_amo
 # ## 🟡 Level 3 — Functions with Strings
 
 # 21. **Create a function `count_characters()` that accepts a string and returns the total number of characters without using the built-in `len()` function.**
+def count_characters(string):
+    count = 0
+    for char in string:
+        count += 1
+    return count
+check_divisibility = count_characters("Hello, World!")
+print(f"The total number of characters in 'Hello, World!' is: {check_divisibility}")
 # 22. **Create a function `count_vowels()` that accepts a string and returns the total number of vowels present in the string.**
 # 23. **Create a function `reverse_string()` that accepts a string and returns the string in reverse order without using the built-in `reversed()` function.**
 # 24. **Create a function `is_palindrome()` that accepts a string and determines whether it reads the same forward and backward.**
