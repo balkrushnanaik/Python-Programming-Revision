@@ -218,6 +218,12 @@ def count_words(sentence):
 word_count = count_words("Hello, how are you?") 
 print(f"The total number of words in 'Hello, how are you?' is: {word_count}")
 # 26. **Create a function `capitalize_words()` that accepts a sentence and returns a new sentence where the first letter of every word is capitalized.**
+def capitalize_words(sentence):
+    words = sentence.split()
+    capitalized_words = [word.capitalize() for word in words]
+    return ' '.join(capitalized_words)
+capitalized_result = capitalize_words("hello, how are you?")
+print(f"The capitalized sentence is: '{capitalized_result}'")
 # 27. **Create a function `remove_spaces()` that accepts a string and returns the same string after removing all spaces.**
 # 28. **Create a function `count_character_frequency()` that accepts a string and a character and returns how many times that character appears in the string.**
 # 29. **Create a function `find_longest_word()` that accepts a sentence and returns the longest word without using a library designed specifically for finding the longest element.**
