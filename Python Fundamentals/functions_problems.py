@@ -239,6 +239,15 @@ def count_character_frequency(string, character):
 check_frequency = count_character_frequency("Hello, how are you?", "o")
 print(f"The character 'o' appears {check_frequency} times in 'Hello, how are you?'")
 # 29. **Create a function `find_longest_word()` that accepts a sentence and returns the longest word without using a library designed specifically for finding the longest element.**
+def find_longest_word(sentence):
+    words = sentence.split()
+    longest_word = ""
+    for word in words:
+        if len(word) > len(longest_word):
+            longest_word = word
+    return longest_word
+longest_word_result = find_longest_word("The quick brown fox jumps over the lazy dog")
+print(f"The longest word in the sentence is: '{longest_word_result}'")
 # 30. **Create a function `check_anagram()` that accepts two strings and determines whether they contain the same characters with the same frequency.**
 
 # ## 🟡 Level 4 — Functions with Lists
