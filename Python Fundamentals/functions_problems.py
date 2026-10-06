@@ -230,6 +230,14 @@ def remove_spaces(string):
 spaces_removed = remove_spaces("Hello, how are you?")
 print(f"The string after removing spaces is: '{spaces_removed}'")
 # 28. **Create a function `count_character_frequency()` that accepts a string and a character and returns how many times that character appears in the string.**
+def count_character_frequency(string, character):
+    count = 0
+    for char in string:
+        if char == character:
+            count += 1
+    return count
+check_frequency = count_character_frequency("Hello, how are you?", "o")
+print(f"The character 'o' appears {check_frequency} times in 'Hello, how are you?'")
 # 29. **Create a function `find_longest_word()` that accepts a sentence and returns the longest word without using a library designed specifically for finding the longest element.**
 # 30. **Create a function `check_anagram()` that accepts two strings and determines whether they contain the same characters with the same frequency.**
 
