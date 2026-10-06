@@ -225,6 +225,10 @@ def capitalize_words(sentence):
 capitalized_result = capitalize_words("hello, how are you?")
 print(f"The capitalized sentence is: '{capitalized_result}'")
 # 27. **Create a function `remove_spaces()` that accepts a string and returns the same string after removing all spaces.**
+def remove_spaces(string):
+    return string.replace(" ", "")
+spaces_removed = remove_spaces("Hello, how are you?")
+print(f"The string after removing spaces is: '{spaces_removed}'")
 # 28. **Create a function `count_character_frequency()` that accepts a string and a character and returns how many times that character appears in the string.**
 # 29. **Create a function `find_longest_word()` that accepts a sentence and returns the longest word without using a library designed specifically for finding the longest element.**
 # 30. **Create a function `check_anagram()` that accepts two strings and determines whether they contain the same characters with the same frequency.**
