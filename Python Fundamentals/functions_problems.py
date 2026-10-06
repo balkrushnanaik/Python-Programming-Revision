@@ -249,6 +249,13 @@ def find_longest_word(sentence):
 longest_word_result = find_longest_word("The quick brown fox jumps over the lazy dog")
 print(f"The longest word in the sentence is: '{longest_word_result}'")
 # 30. **Create a function `check_anagram()` that accepts two strings and determines whether they contain the same characters with the same frequency.**
+def check_anagram(string1, string2):
+    cleaned_string1 = ''.join(char.lower() for char in string1 if char.isalnum())
+    cleaned_string2 = ''.join(char.lower() for char in string2 if char.isalnum())
+    
+    return sorted(cleaned_string1) == sorted(cleaned_string2)
+anagram_check = check_anagram("Listen", "Silent")
+print(f"Are 'Listen' and 'Silent' anagrams? {anagram_check}")
 
 # ## 🟡 Level 4 — Functions with Lists
 
