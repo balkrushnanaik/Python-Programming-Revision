@@ -275,6 +275,14 @@ def find_list_average(numbers):
 list_average_result = find_list_average([1, 2, 3, 4, 5])
 print(f"The average of the list [1, 2, 3, 4, 5] is: {list_average_result}")
 # 33. **Create a function `find_largest_in_list()` that accepts a list of numbers and returns the largest value without using `max()`.**
+def find_largest_in_list(numbers):
+    largest = numbers[0] if numbers else None
+    for num in numbers:
+        if num > largest:
+            largest = num
+    return largest
+largest_in_list_result = find_largest_in_list([1, 2, 3, 4, 5])
+print(f"The largest value in the list [1, 2, 3, 4, 5] is: {largest_in_list_result}")
 # 34. **Create a function `find_smallest_in_list()` that accepts a list of numbers and returns the smallest value without using `min()`.**
 # 35. **Create a function `count_even_numbers()` that accepts a list of integers and returns how many values in the list are even.**
 # 36. **Create a function `filter_positive_numbers()` that accepts a list of numbers and returns a new list containing only positive numbers.**
