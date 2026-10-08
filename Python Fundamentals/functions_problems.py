@@ -260,7 +260,20 @@ print(f"Are 'Listen' and 'Silent' anagrams? {anagram_check}")
 # ## 🟡 Level 4 — Functions with Lists
 
 # 31. **Create a function `find_list_sum()` that accepts a list of numbers and returns the total sum without using Python's built-in `sum()` function.**
+def find_list_sum(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+list_sum_result = find_list_sum([1, 2, 3, 4, 5])
+print(f"The total sum of the list [1, 2, 3, 4, 5] is: {list_sum_result}")
 # 32. **Create a function `find_list_average()` that accepts a list of numbers and returns their average using a separate function to calculate the total.**
+def find_list_average(numbers):
+    total = find_list_sum(numbers)
+    average = total / len(numbers) if numbers else 0
+    return average
+list_average_result = find_list_average([1, 2, 3, 4, 5])
+print(f"The average of the list [1, 2, 3, 4, 5] is: {list_average_result}")
 # 33. **Create a function `find_largest_in_list()` that accepts a list of numbers and returns the largest value without using `max()`.**
 # 34. **Create a function `find_smallest_in_list()` that accepts a list of numbers and returns the smallest value without using `min()`.**
 # 35. **Create a function `count_even_numbers()` that accepts a list of integers and returns how many values in the list are even.**
