@@ -293,6 +293,14 @@ def find_smallest_in_list(numbers):
 smallest_in_list_result = find_smallest_in_list([1, 2, 3, 4, 5])
 print(f"The smallest value in the list [1, 2, 3, 4, 5] is: {smallest_in_list_result}")
 # 35. **Create a function `count_even_numbers()` that accepts a list of integers and returns how many values in the list are even.**
+def count_even_numbers(numbers):
+    count = 0
+    for num in numbers:
+        if num % 2 == 0:
+            count += 1
+    return count
+even_count_result = count_even_numbers([1, 2, 3, 4, 5])
+print(f"The count of even numbers in the list [1, 2, 3, 4, 5] is: {even_count_result}")
 # 36. **Create a function `filter_positive_numbers()` that accepts a list of numbers and returns a new list containing only positive numbers.**
 # 37. **Create a function `remove_duplicates()` that accepts a list and returns a new list containing each element only once while preserving its original order.**
 # 38. **Create a function `second_largest()` that accepts a list of numbers and returns the second-largest unique number in the list.**
