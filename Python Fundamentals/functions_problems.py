@@ -302,6 +302,14 @@ def count_even_numbers(numbers):
 even_count_result = count_even_numbers([1, 2, 3, 4, 5])
 print(f"The count of even numbers in the list [1, 2, 3, 4, 5] is: {even_count_result}")
 # 36. **Create a function `filter_positive_numbers()` that accepts a list of numbers and returns a new list containing only positive numbers.**
+def filter_positive_numbers(numbers):
+    positive_numbers = []
+    for num in numbers:
+        if num > 0:
+            positive_numbers.append(num)
+    return positive_numbers
+check_positive_numbers = filter_positive_numbers([-5, 3, -1, 7, 0, -2, 4])  
+print(f"The positive numbers in the list [-5, 3, -1, 7, 0, -2, 4] are: {check_positive_numbers}")
 # 37. **Create a function `remove_duplicates()` that accepts a list and returns a new list containing each element only once while preserving its original order.**
 # 38. **Create a function `second_largest()` that accepts a list of numbers and returns the second-largest unique number in the list.**
 # 39. **Create a function `sort_numbers()` that accepts a list of numbers and returns the numbers in ascending order without using the built-in `sort()` or `sorted()` functions.**
