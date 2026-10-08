@@ -284,6 +284,14 @@ def find_largest_in_list(numbers):
 largest_in_list_result = find_largest_in_list([1, 2, 3, 4, 5])
 print(f"The largest value in the list [1, 2, 3, 4, 5] is: {largest_in_list_result}")
 # 34. **Create a function `find_smallest_in_list()` that accepts a list of numbers and returns the smallest value without using `min()`.**
+def find_smallest_in_list(numbers):
+    smallest = numbers[0] if numbers else None
+    for num in numbers:
+        if num < smallest:
+            smallest = num
+    return smallest
+smallest_in_list_result = find_smallest_in_list([1, 2, 3, 4, 5])
+print(f"The smallest value in the list [1, 2, 3, 4, 5] is: {smallest_in_list_result}")
 # 35. **Create a function `count_even_numbers()` that accepts a list of integers and returns how many values in the list are even.**
 # 36. **Create a function `filter_positive_numbers()` that accepts a list of numbers and returns a new list containing only positive numbers.**
 # 37. **Create a function `remove_duplicates()` that accepts a list and returns a new list containing each element only once while preserving its original order.**
