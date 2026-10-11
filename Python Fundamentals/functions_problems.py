@@ -340,6 +340,14 @@ def sort_numbers(numbers):
 check_sort_numbers = sort_numbers([5, 2, 9, 1, 5, 6])
 print(f"The sorted list of numbers [5, 2, 9, 1, 5, 6] in ascending order is: {check_sort_numbers}")
 # 40. **Create a function `find_common_elements()` that accepts two lists and returns the elements that occur in both lists without returning duplicates.**
+def find_common_elements(list1, list2):
+    common_elements = []
+    for item in list1:
+        if item in list2 and item not in common_elements:
+            common_elements.append(item)
+    return common_elements
+check_anagram = find_common_elements([1, 2, 3, 4, 5], [4, 5, 6, 7, 8])
+print(f"The common elements between [1, 2, 3, 4, 5] and [4, 5, 6, 7, 8] are: {check_anagram}")  
 
 # ## 🟡 Level 5 — Functions with Dictionaries
 
