@@ -320,6 +320,16 @@ def remove_duplicates(lst):
 check_duplicates = remove_duplicates([1, 2, 3, 2, 1, 4, 5, 3])
 print(f"The list after removing duplicates from [1, 2, 3, 2, 1, 4, 5, 3] is: {check_duplicates}")
 # 38. **Create a function `second_largest()` that accepts a list of numbers and returns the second-largest unique number in the list.**
+def second_largest(numbers):
+    unique_numbers = remove_duplicates(numbers)
+    if len(unique_numbers) < 2:
+        return None
+    largest = find_largest_in_list(unique_numbers)
+    unique_numbers.remove(largest)
+    second_largest_value = find_largest_in_list(unique_numbers)
+    return second_largest_value
+largest_in_list_result = second_largest([1, 2, 3, 4, 5])
+print(f"The second-largest unique number in the list [1, 2, 3, 4, 5] is: {largest_in_list_result}")
 # 39. **Create a function `sort_numbers()` that accepts a list of numbers and returns the numbers in ascending order without using the built-in `sort()` or `sorted()` functions.**
 # 40. **Create a function `find_common_elements()` that accepts two lists and returns the elements that occur in both lists without returning duplicates.**
 
