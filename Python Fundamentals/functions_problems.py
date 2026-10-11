@@ -331,6 +331,14 @@ def second_largest(numbers):
 largest_in_list_result = second_largest([1, 2, 3, 4, 5])
 print(f"The second-largest unique number in the list [1, 2, 3, 4, 5] is: {largest_in_list_result}")
 # 39. **Create a function `sort_numbers()` that accepts a list of numbers and returns the numbers in ascending order without using the built-in `sort()` or `sorted()` functions.**
+def sort_numbers(numbers):
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if numbers[i] > numbers[j]:
+                numbers[i], numbers[j] = numbers[j], numbers[i]
+    return numbers
+check_sort_numbers = sort_numbers([5, 2, 9, 1, 5, 6])
+print(f"The sorted list of numbers [5, 2, 9, 1, 5, 6] in ascending order is: {check_sort_numbers}")
 # 40. **Create a function `find_common_elements()` that accepts two lists and returns the elements that occur in both lists without returning duplicates.**
 
 # ## 🟡 Level 5 — Functions with Dictionaries
