@@ -352,6 +352,15 @@ print(f"The common elements between [1, 2, 3, 4, 5] and [4, 5, 6, 7, 8] are: {ch
 # ## 🟡 Level 5 — Functions with Dictionaries
 
 # 41. **Create a function `student_average()` that accepts a dictionary containing subject names and marks and returns the student's average marks.**
+def student_average(marks_dict):
+    total_marks = 0
+    subject_count = len(marks_dict)
+    for marks in marks_dict.values():
+        total_marks += marks
+    average_marks = total_marks / subject_count if subject_count > 0 else 0
+    return average_marks
+check_student_average = student_average({"Math": 85, "Science": 90, "English": 78})
+print(f"The average marks of the student are: {check_student_average}")
 # 42. **Create a function `highest_scorer()` that accepts a dictionary containing student names and marks and returns the name of the student with the highest marks.**
 # 43. **Create a function `count_frequency()` that accepts a list of values and returns a dictionary containing the frequency of each value.**
 # 44. **Create a function `find_expensive_products()` that accepts a dictionary of product names and prices and returns products whose prices exceed a specified amount.**
