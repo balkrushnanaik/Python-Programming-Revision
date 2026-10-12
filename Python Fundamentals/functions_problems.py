@@ -403,6 +403,12 @@ def calculate_inventory_value(inventory_dict):
 check_calculate_inventory_value = calculate_inventory_value({"Product A": {"quantity": 10, "price": 100}, "Product B": {"quantity": 5, "price": 200}})
 print(f"The total inventory value is: {check_calculate_inventory_value}")
 # 46. **Create a function `merge_dictionaries()` that accepts two dictionaries and returns a single dictionary containing all key-value pairs from both dictionaries.**
+def merge_dictionaries(dict1, dict2):
+    merged_dict = dict1.copy()
+    merged_dict.update(dict2)
+    return merged_dict
+check_merge_dictionaries = merge_dictionaries({"a": 1, "b": 2}, {"c": 3, "d": 4})
+print(f"The merged dictionary is: {check_merge_dictionaries}")
 # 47. **Create a function `find_department_salary()` that accepts employee records and returns the average salary for a specified department.**
 # 48. **Create a function `highest_salary_employee()` that accepts employee information and returns the employee record having the highest salary.**
 # 49. **Create a function `group_students_by_grade()` that accepts student marks and returns a dictionary grouping students according to their grades.**
