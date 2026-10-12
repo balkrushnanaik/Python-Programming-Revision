@@ -384,6 +384,14 @@ def count_frequency(values):
 check_count_frequency = count_frequency([1, 2, 2, 3, 3, 3, 4])
 print(f"The frequency of each value in the list [1, 2, 2, 3, 3, 3, 4] is: {check_count_frequency}")
 # 44. **Create a function `find_expensive_products()` that accepts a dictionary of product names and prices and returns products whose prices exceed a specified amount.**
+def find_expensive_products(products_dict, price_threshold):
+    expensive_products = {}
+    for product, price in products_dict.items():
+        if price > price_threshold:
+            expensive_products[product] = price
+    return expensive_products
+check_find_expensive_products = find_expensive_products({"Product A": 100, "Product B": 200, "Product C": 50}, 150)
+print(f"The products with prices exceeding 150 are: {check_find_expensive_products}")
 # 45. **Create a function `calculate_inventory_value()` that accepts a dictionary containing product names, quantities, and prices and returns the total inventory value.**
 # 46. **Create a function `merge_dictionaries()` that accepts two dictionaries and returns a single dictionary containing all key-value pairs from both dictionaries.**
 # 47. **Create a function `find_department_salary()` that accepts employee records and returns the average salary for a specified department.**
