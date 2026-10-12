@@ -373,6 +373,16 @@ def highest_scorer(marks_dict):
 check_highest_scorer = highest_scorer({"Alice": 85, "Bob": 90, "Charlie": 78})
 print(f"The student with the highest marks is: {check_highest_scorer}")
 # 43. **Create a function `count_frequency()` that accepts a list of values and returns a dictionary containing the frequency of each value.**
+def count_frequency(values):
+    frequency_dict = {}
+    for value in values:
+        if value in frequency_dict:
+            frequency_dict[value] += 1
+        else:
+            frequency_dict[value] = 1
+    return frequency_dict
+check_count_frequency = count_frequency([1, 2, 2, 3, 3, 3, 4])
+print(f"The frequency of each value in the list [1, 2, 2, 3, 3, 3, 4] is: {check_count_frequency}")
 # 44. **Create a function `find_expensive_products()` that accepts a dictionary of product names and prices and returns products whose prices exceed a specified amount.**
 # 45. **Create a function `calculate_inventory_value()` that accepts a dictionary containing product names, quantities, and prices and returns the total inventory value.**
 # 46. **Create a function `merge_dictionaries()` that accepts two dictionaries and returns a single dictionary containing all key-value pairs from both dictionaries.**
