@@ -393,6 +393,15 @@ def find_expensive_products(products_dict, price_threshold):
 check_find_expensive_products = find_expensive_products({"Product A": 100, "Product B": 200, "Product C": 50}, 150)
 print(f"The products with prices exceeding 150 are: {check_find_expensive_products}")
 # 45. **Create a function `calculate_inventory_value()` that accepts a dictionary containing product names, quantities, and prices and returns the total inventory value.**
+def calculate_inventory_value(inventory_dict):
+    total_value = 0
+    for product, details in inventory_dict.items():
+        quantity = details.get("quantity", 0)
+        price = details.get("price", 0)
+        total_value += quantity * price
+    return total_value
+check_calculate_inventory_value = calculate_inventory_value({"Product A": {"quantity": 10, "price": 100}, "Product B": {"quantity": 5, "price": 200}})
+print(f"The total inventory value is: {check_calculate_inventory_value}")
 # 46. **Create a function `merge_dictionaries()` that accepts two dictionaries and returns a single dictionary containing all key-value pairs from both dictionaries.**
 # 47. **Create a function `find_department_salary()` that accepts employee records and returns the average salary for a specified department.**
 # 48. **Create a function `highest_salary_employee()` that accepts employee information and returns the employee record having the highest salary.**
