@@ -362,6 +362,16 @@ def student_average(marks_dict):
 check_student_average = student_average({"Math": 85, "Science": 90, "English": 78})
 print(f"The average marks of the student are: {check_student_average}")
 # 42. **Create a function `highest_scorer()` that accepts a dictionary containing student names and marks and returns the name of the student with the highest marks.**
+def highest_scorer(marks_dict):
+    highest_marks = -1
+    top_student = ""
+    for student, marks in marks_dict.items():
+        if marks > highest_marks:
+            highest_marks = marks
+            top_student = student
+    return top_student
+check_highest_scorer = highest_scorer({"Alice": 85, "Bob": 90, "Charlie": 78})
+print(f"The student with the highest marks is: {check_highest_scorer}")
 # 43. **Create a function `count_frequency()` that accepts a list of values and returns a dictionary containing the frequency of each value.**
 # 44. **Create a function `find_expensive_products()` that accepts a dictionary of product names and prices and returns products whose prices exceed a specified amount.**
 # 45. **Create a function `calculate_inventory_value()` that accepts a dictionary containing product names, quantities, and prices and returns the total inventory value.**
